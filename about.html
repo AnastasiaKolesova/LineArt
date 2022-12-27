@@ -519,24 +519,26 @@
 					</div>
 				</div>
 			</section>
-			<section id="connection" class="page-about__order order">
+			<section id="connection" class="page__order order">
 				<div class="order__container _container">
 					<div class="order__body">
-						<h3 class="order__title order__title_black title-block">Хотите заказать съемку или услуги дизайна?
-							Напишите нам!</h3>
+						<h2 class="order__title title-block">ХОТИТЕ ЗАКАЗАТЬ ПРОМЫШЛЕННУЮ СЪЕМКУ? НАПИШИТЕ НАМ!</h2>
 						<div class="order__form form">
 							<form id="myForm" method="post" action="#" class="form__body">
 
 								<div class="form__inputs">
-									<input type="text" id="name" name="name" class=" form__input" placeholder="Имя">
+									<input type="text" id="name" name="name" class=" form__input text required" placeholder="Имя">
+									<span class="message-error" data-class="name"></span>
 								</div>
 
 								<div class="form__inputs">
-									<input type="tel" id="phone" name="phone" class="form__input" placeholder="Телефон">
+									<input type="tel" id="phone" name="phone" class="form__input phone required" placeholder="Телефон">
+									<span class="message-error" data-class="phone"></span>
 								</div>
 
 								<div class="form__inputs">
-									<input id="email" name="email" class="form__input" placeholder="Email">
+									<input id="email" name="email" class="form__input email required" placeholder="Email">
+									<span class="message-error" data-class="email"></span>
 								</div>
 
 								<div class="form__selects _icon-next">
@@ -555,10 +557,11 @@
 
 								<div class="form__checkboxes">
 									<label for="agreement">
-										<input value="yes" id="agreement" name="agreement" type="checkbox"
-											class="form__checkbox-real">
+										<input id="agreement" name="check" type="checkbox"
+											class="form__checkbox-real check required">
 										<span class="form__checkbox-custom"></span>
 										Согласен на обработку персональных данных
+										<span class="message-error" data-class="check"></span>
 									</label>
 								</div>
 
